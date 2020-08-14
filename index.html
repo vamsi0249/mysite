@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>assignment-3</title>
+  <link rel="shortcut icon" href="vk4.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+
+  <script type="text/javascript" src="popper/popper.min.js"></script>
+-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <style>
+  body{
+    height:100%;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+  }
+    #nav {
+
+      width: 100%;
+      height: 40px;
+      color: white;
+      float: left;
+      margin-bottom: 100px;
+
+    }
+
+    #nav ul {
+      list-style-type: none;
+      padding: 0px;
+    }
+
+    #nav ul li {
+      width: 150px;
+      height: 40px;
+      float: left;
+      background-color: #66BFBF;
+
+
+      margin: 1px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    #nav ul li a {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+
+    }
+
+    #nav ul li a:hover {
+      background-color: white;
+      color: black;
+      text-decoration: underline;
+    }
+
+    #nav ul li ul li {
+      display: none;
+    }
+
+    #nav ul li:hover ul li {
+      display: block;
+    }
+
+    i {
+      margin-right: 8px;
+    }
+
+    #nav ul li ul li ul li {
+      display: none;
+    }
+
+    #nav ul li ul li:hover ul li {
+      display: block;
+    }
+
+    #container {
+      height: 1000px;
+      width: 100%;
+      background-color: #EAF6F6;
+
+
+    }
+
+    #companyname {
+      width: 100px;
+      color: white;
+      height: 60px;
+      position: relative;
+      top: -300px;
+      left: 720px;
+    }
+
+    #cloud1 {
+      position: relative;
+      left: 900px;
+    }
+
+    #cloud2 {
+      position: relative;
+      left: 300px;
+    }
+
+    #content1 {
+      font-size: 100px;
+      font-weight: bold;
+      font-family: 'Sacramento', cursive;
+      color: #66BFBF;
+      text-align: center;
+
+    }
+
+    #content2 {
+      font-family: 'MuseoModerno', cursive;
+      font-weight: bold;
+      font-size: 40px;
+      color: #66BFBF;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #desktop {
+      width: 700px;
+      height: 600px;
+      background-color: ;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      top: -100px;
+      background-image: url('desk8.png');
+      background-size: 700px 700px;
+      animation: desktop 6s infinite linear;
+    }
+
+    @keyframes desktop {
+      20% {
+        background-image: url('desk8.png');
+      }
+
+      40% {
+        background-image: url('desk3.png');
+      }
+
+      60% {
+        background-image: url('desk6.png');
+      }
+
+      80% {
+        background-image: url('desk7.png');
+      }
+
+      100% {
+        background-image: url('desk2.png');
+      }
+    }
+
+    #dot {
+      height: 50px;
+      width: 200px;
+      position: relative;
+      font-size: 70px;
+      top: 50px;
+      bottom: 0px;
+      text-align: center;
+    }
+
+    #mypic {
+      width: 200px;
+      height: 200px;
+      position: relative;
+
+
+
+    }
+
+    #p1 {
+      font-size: 45px;
+      color: #ce0f3d;
+    }
+
+    #p2 {
+      font-size: 60px;
+      color: black;
+    }
+
+    #img1 {
+      height: 200px;
+      width: 200px;
+    }
+
+    #i1 {
+      color: #ce0f3d;
+      font-size: 40px;
+    }
+
+    #i2 {
+      line-height: 40px;
+      font-size: 20px;
+
+    }
+
+
+    #input {
+      width: 200px;
+      height: 50px;
+      color: white;
+      font-size: 35px;
+      background-color: black;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    #div2 {
+      width: 100%;
+      height: 400px;
+      position: relative;
+    }
+
+    #div2 img {
+      width: 700px;
+      height: 430px;
+      opacity: 0.5;
+    }
+
+    #hello {
+      font-size: 40px;
+      color: #ce0f3d;
+      text-align: center;
+      position: relative;
+      top: -400px;
+    }
+
+    #ceo {
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      top: -300px;
+    }
+
+    #ceo span {
+      color:
+    }
+
+    #developer {
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      top: -250px;
+    }
+
+
+
+    #div4 {
+      width: 100%;
+      height: 1150px;
+      background-color: #FFFFFF;
+      clear: left;
+
+    }
+
+    #div5 {
+      width: 100%;
+      height: 300px;
+      background-color: #097F8B;
+    }
+
+    #t1 {
+      font-size: 20px;
+      width: 200px;
+      text-decoration: none
+    }
+
+    #t1:hover {
+      color: #ce0f3d;
+      font-weight: bold;
+    }
+
+    #img2 {
+      width: 800px;
+      height: 500px;
+    }
+
+    #img3 {
+      width: 250px;
+      height: 150px;
+    }
+
+    #img4 {
+      width: 250px;
+      height: 100px;
+    }
+
+    #td1 {
+      width: 1510px;
+      height: 300px;
+      background-color: #097F8B;
+      color: white;
+    }
+
+    font {
+      font-size: 80px;
+      color: black;
+    }
+
+
+    #a1 {
+
+      text-align: center;
+      color: white;
+
+      font-size: 30px;
+    }
+
+    #td5 {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #ce0f3d;
+      background-color: black;
+      padding-left: 20px;
+    }
+
+    #img5 {
+      width: 150px;
+      height: 100px;
+    }
+
+    #click {
+      background-color: #CE0F3D;
+      color: white;
+      padding: 5px 20px;
+      font-family: serif;
+      font-size: 20px;
+      text-decoration: none;
+      border: 3px solid #CE0F3D;
+      border-radius: 40px;
+      box-shadow: 0px 0px 0px 2px red;
+    }
+
+    #click:hover {
+      background-color: white;
+      color: black;
+
+    }
+
+    #th1 {
+      width: 100px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    #mainheader{
+      background-color: #66BFBF;
+      transition: background-color 4s;
+    }
+    #mainheader:hover {
+      background-color: #e7305b;
+    }
+
+    #header {
+      height: 120px;
+      width: 180px;
+      padding:10px;
+
+    }
+
+
+
+
+    #header:hover {
+      cursor: pointer;
+    }
+
+    #footer {
+      width: 1510px;
+      height: 150px;
+      background-color: #66BFBF;
+
+    }
+
+    #footer ul {
+      list-style-type: none;
+      padding-left: 500px;
+      padding-top: 10px;
+    }
+
+    #footer ul li {
+      display: inline;
+      width: 250px;
+      height: 60px;
+      float: left;
+      text-align: center;
+      padding:
+    }
+
+    #footer ul li a {
+      text-decoration: none;
+      font-size: 25px;
+      line-height: 80px;
+      color: black;
+    }
+
+    #footer ul li:hover {
+      background-color: white;
+      color: red;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    #footer p {
+      padding-top: 70px;
+      padding-left: 650px;
+      color: black;
+    }
+
+    #tabgap {
+      padding-left: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="mainheader" class="container-fluid">
+    <div class="row">
+      <div class="col"><img src="html5.png" alt="" id="header"></div>
+      <div class="col"><img src="css.png" alt="" id="header"></div>
+      <div class="col"><img src="js.png" alt="" id="header"></div>
+      <div class="col"><img src="nodejs.png" alt="" id="header"></div>
+      <div class="col"><img src="react.png" alt="" id="header"></div>
+      <div class="col"><img src="bootstrap.png" alt="" id="header"></div>
+      <div class="col"><img src="python.png" alt="" id="header"></div>
+    </div>
+  </div>
+  <div id=nav>
+    <ul>
+      <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+      <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>About Us</a></li>
+      <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Courses</a>
+        <ul>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="#">UI Tech</a></li>
+        </ul>
+      </li>
+      <li><a href="http://www.freejobalert.com/off-campus-software-engineers-freshers/2347/" target="_blank"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Job Alerts</a></li>
+      <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+    </ul>
+  </div>
+  <div id=container>
+    <div id=cloud1><img src="wordcloud2.png" alt="" id=img3></div>
+    <div id=content1>I'm vamsi krishna</div>
+    <div id=content2>A <u>Pro</u>fessional Developers</div>
+    <div id=cloud2><img src="wordcloud4.png" alt="" id=img4></div>
+    <div id=desktop><img src="tabl6.png" alt="" id=img2></div>
+  </div>
+  <div id="companyname">SS Software <br>Technologies</div>
+
+
+  <h1 class="text-center display-1">.....</h1><br><br>
+  <img id=mypic src="vamimg.jpg" alt="" class="rounded-circle mx-auto d-block">
+
+  <div id=div2>
+    <img src="building.png" alt="office building" class=" mx-auto d-block">
+    <div id="hello">Hello</div>
+    <div id="ceo">I am Future Founder and CEO of <br><span>SS Software Technologies</span></div>
+    <div id="developer">I am UI Technologies,Python and Web Developer,<br> I 💚 to work on all Technologies</div>
+  </div>
+  <center>
+    <div id=div4>
+      <h1 class="text-center display-1">.....</h1><br>
+      <p id=p1>My Skills</p>
+      <table>
+        <tr>
+          <th id=th1><img src="ui4.jpg" alt=""></th>
+          <td id=tabgap>
+            <p>
+            <h2><i id=i1>UI Technologies</i></h2>
+            </p>
+            <h2 id=i2>I love all modules in UI Tecnologies like HTML,<br>CSS, Java Script,Node JS,React JS, Bootstrap.</h2>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <h2><i id=i1>Python</i></h2>
+            <h2 id=i2>I Love all python modules like Python,DJango,<br>Mtatistics,machine Learning,Deep Learining,
+              Natural <br> Language Processing,Nueral Network,Artificial Inteligence.</h2>
+          </td>
+          <td><img src="python.png" alt="" id=img1></td>
+        </tr>
+      </table>
+      <h1 class="text-center display-1">.....</h1><br>
+      <h1 id="p1">Get In Touch</h1><br>
+      <h2 style="font-size:25px;">Python, UI Technologies are Awesome!<br><br>if you want to join in my company in future</h2><br><br>
+      <a href="#" id=click>click here</a>
+      </table> <br><br><br><br>
+    </div>
+  </center>
+  <div id=footer>
+
+    <ul>
+      <li><a href="#">UI Facebook Page</a> </li>
+      <li><a href="#">Python Facebook Page</a></li>
+
+    </ul>
+    <p>@2020 ss softwre technologies pvt ltd.</p>
+
+  </div>
+
+</body>
+
+</html>
